@@ -1,0 +1,11 @@
+services:
+  api:
+    user: node
+    container_name: react_node
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 3000:3000
