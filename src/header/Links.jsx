@@ -9,6 +9,9 @@ function Links() {
             <a href="mailto:lex161+linkedin@gmail.com" className="mail" target="_blank">
                 <i className="bx bxl-gmail"></i>
             </a>
+            <a href="https://t.me/alekseyranuk" className="telegram" target="_blank">
+                <i className="bx bxl-telegram"></i>
+            </a>
 
         </div>
     );

@@ -1,5 +1,6 @@
 import profile from '../assets/IMG_4110.jpeg';
 import Links from "./Links";
+
 function Profile() {
     return (
         <div className="profile">

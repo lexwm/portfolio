@@ -3,7 +3,7 @@ import Header from "./header/Header";
 
 function App() {
   return (
-    <Header/>
+      <Header/>
   );
 }
 
