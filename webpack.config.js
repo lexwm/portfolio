@@ -1,16 +1,21 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const PUBLIC_DIR = path.resolve(__dirname, "public");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "build"),
+    // publicPath: PUBLIC_DIR,
   },
   plugins: [
     new HtmlWebpackPlugin({
+      // publicPath: PUBLIC_DIR,
+      favicon: path.join(__dirname, "public", "favicon.ico"),
       template: path.join(__dirname, "public", "index.html"),
-    }),
+      inject: 'head',
+    })
   ],
   devServer: {
     static: {
@@ -19,7 +24,6 @@ module.exports = {
     port: 3000,
   },
   module: {
-    // exclude node_modules
     rules: [
       {
         test: /\.css$/i,
