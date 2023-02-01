@@ -1,21 +1,45 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-// const PUBLIC_DIR = path.resolve(__dirname, "public");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "build"),
-    // publicPath: PUBLIC_DIR,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      // publicPath: PUBLIC_DIR,
+      title: 'Oleksiy Ranuk - Portfolio',
+      meta: {
+        charset: { charset: 'utf-8' },
+        viewport: 'width=device-width, initial-scale=1',
+      },
       favicon: path.join(__dirname, "public", "favicon.ico"),
       template: path.join(__dirname, "public", "index.html"),
       inject: 'head',
-    })
+    }),
+
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.join(__dirname, "public", "manifest.json"),
+          to: path.join(__dirname, "build", "manifest.json")
+        },
+        {
+          from: path.join(__dirname, "public", "logo192.png"),
+          to: path.join(__dirname, "build", "logo192.png")
+        },
+        {
+          from: path.join(__dirname, "public", "logo512.png"),
+          to: path.join(__dirname, "build", "logo512.png")
+        },
+        {
+          from: path.join(__dirname, "public", "robots.txt"),
+          to: path.join(__dirname, "build", "robots.txt")
+        }
+      ]
+    }),
   ],
   devServer: {
     static: {
