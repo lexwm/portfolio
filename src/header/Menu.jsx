@@ -4,7 +4,7 @@ import MenuItem from "./MenuItem";
 function Menu() {
     return (
         <nav id="navbar" className="nav-menu navbar">
-            <Nav defaultActiveKey="#hero" as="ul" bsPrefix="left-menu" navbarScroll={true}>
+            <Nav defaultActiveKey="#hero" as="ul" bsPrefix="left-menu">
                 <MenuItem name="Home" href="#hero" class="bx bx-home"/>
                 <MenuItem name="About" href="#about" class="bx bx-user"/>
                 <MenuItem name="Resume" href="#resume" class="bx bx-file-blank"/>
