@@ -9,7 +9,7 @@ function HeroSection() {
     useEffect(() => {
         const typed = new Typed(el.current, {
             strings: ["IT Engineer", "Team Lead", "PHP Developer", "a little of DevOps"], // Strings to display
-            // Speed settings, try diffrent values untill you get good results
+            loop: true,
             startDelay: 300,
             typeSpeed: 100,
             backSpeed: 100,

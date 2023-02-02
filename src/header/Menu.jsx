@@ -9,7 +9,7 @@ function Menu() {
             <Nav defaultActiveKey="#hero" as="ul" bsPrefix="left-menu">
                 {
                     MenuData.map(Item => (
-                        <MenuItem name={Item.name} href={Item.href} class={Item.iconClass}/>
+                        <MenuItem key={Item.name} name={Item.name} href={Item.href} class={Item.iconClass}/>
                     ))
                 }
             </Nav>
