@@ -24,11 +24,11 @@ const MenuData = [
         href: "#services",
         iconClass: "bx bx-server"
     },
-    {
-        name: "Contact",
-        href: "#contact",
-        iconClass: "bx bx-envelope"
-    }
+    // {
+    //     name: "Contact",
+    //     href: "#contact",
+    //     iconClass: "bx bx-envelope"
+    // }
 ];
 
 export default MenuData;

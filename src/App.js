@@ -1,11 +1,19 @@
 import Header from "./header/Header";
 import HeroSection from "./hero/HeroSection";
 import ScrollContent from "./ScrollContent";
+import MobileToggle from "./MobileToggle";
 import AOS from 'aos';
 import React from 'react';
 import Helper from "./Helper";
 
 class App extends React.Component{
+
+    constructor(props) {
+        super(props);
+        this.onScrollHandle = this.onScrollHandle.bind(this);
+        this.helper = new Helper();
+        this.navLinks = null;
+    }
 
     componentDidMount () {
         AOS.init({
@@ -13,29 +21,35 @@ class App extends React.Component{
             easing: 'ease-in-out'
         });
 
-        document.addEventListener('scroll', this.setNavBarLinksActive, true);
+        this.navLinks = this.helper.select('#navbar .scrollto', true);
+        this.helper.onscroll(document, this.onScrollHandle);
+
+        if (window.location.hash) {
+            if (this.helper.select(window.location.hash)) {
+                this.helper.scrollTo(window.location.hash)
+            }
+        }
     }
 
-    setNavBarLinksActive () {
-        let helper = new Helper();
+    onScrollHandle () {
         let position = window.scrollY + 200;
-        helper.select('#navbar .scrollto', true).forEach(navbarlink => {
-            if (!navbarlink.hash) return;
-            let section = helper.select(navbarlink.hash);
+        this.navLinks.forEach(navbarLink => {
+            if (!navbarLink.hash) return;
+            let section = this.helper.select(navbarLink.hash);
             if (!section) return;
             if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-                navbarlink.classList.add('active');
+                navbarLink.classList.add('active');
             } else {
-                navbarlink.classList.remove('active');
+                navbarLink.classList.remove('active');
             }
         });
-        helper.toggleBackToTop();
+        this.helper.toggleBackToTop();
     }
 
     render() {
         return (
             <div>
-                <i className="bi bi-list mobile-nav-toggle d-xl-none"></i>
+                <MobileToggle/>
                 <Header/>
                 <HeroSection/>
                 <ScrollContent/>
