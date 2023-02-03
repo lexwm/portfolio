@@ -4,7 +4,7 @@ import ScrollContent from "./ScrollContent";
 import MobileToggle from "./MobileToggle";
 import AOS from 'aos';
 import React from 'react';
-import Helper from "./Helper";
+import Helper from "./helpers/Helper";
 
 class App extends React.Component{
 

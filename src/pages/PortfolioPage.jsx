@@ -2,6 +2,7 @@ import React from 'react';
 import Isotope from 'isotope-layout';
 import AOS from 'aos';
 import PortfolioWrap from "./PortfolioWrap";
+import Helper from "../helpers/Helper";
 
 const filters = [
     {
@@ -77,6 +78,7 @@ class PortfolioPage extends React.Component {
         this.portfolioContainer = null;
         this.portfolioIsotope = null;
         this.portfolioFilters = null;
+        this.helper = new Helper();
     }
 
     handleClick(e) {
@@ -95,8 +97,8 @@ class PortfolioPage extends React.Component {
     }
 
     componentDidMount() {
-        this.portfolioContainer = this.select('.portfolio-container');
-        this.portfolioFilters = this.select('#portfolio-flters li', true);
+        this.portfolioContainer = this.helper.select('.portfolio-container');
+        this.portfolioFilters = this.helper.select('#portfolio-flters li', true);
         this.portfolioIsotope = new Isotope(this.portfolioContainer, {
             itemSelector: '.portfolio-item'
         });
@@ -109,15 +111,6 @@ class PortfolioPage extends React.Component {
         setTimeout(() => {
             this.portfolioFilters[0].click();
         }, 100);
-    }
-
-    select(el, all = false) {
-        el = el.trim()
-        if (all) {
-            return [...document.querySelectorAll(el)]
-        } else {
-            return document.querySelector(el)
-        }
     }
 
     render() {

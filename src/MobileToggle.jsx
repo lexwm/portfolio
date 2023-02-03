@@ -1,5 +1,5 @@
 import React from 'react';
-import Helper from "./Helper";
+import Helper from "./helpers/Helper";
 
 class MobileToggle extends React.Component {
 
