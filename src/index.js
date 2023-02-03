@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import './css/style.css';
 import 'boxicons/css/boxicons.min.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import './css/style.css';
 import App from "./App";
 
 

@@ -39,7 +39,8 @@ module.exports = {
           from: path.join(__dirname, "public", "robots.txt"),
           to: path.join(__dirname, "build", "robots.txt")
         },
-        {from:'src/assets/portfolio',to:'portfolio'}
+        {from:'src/assets/portfolio',to:'portfolio'},
+        {from:'src/assets/testimonials',to:'testimonials'}
       ]
     }),
   ],

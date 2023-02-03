@@ -4,6 +4,7 @@ import SkillsPage from "./pages/SkillsPage";
 import ResumePage from "./pages/ResumePage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ServicesPage from "./pages/ServicesPage";
+import TestimonialsPage from "./pages/TestimonialsPage";
 
 function ScrollContent() {
   return (
@@ -14,6 +15,7 @@ function ScrollContent() {
         <ResumePage/>
         <PortfolioPage/>
         <ServicesPage/>
+        <TestimonialsPage/>
       </main>
   );
 }

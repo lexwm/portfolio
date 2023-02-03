@@ -1,9 +1,7 @@
-import React, {lazy} from 'react';
+import React from 'react';
 import Isotope from 'isotope-layout';
 import AOS from 'aos';
 import PortfolioWrap from "./PortfolioWrap";
-import portfolioOne from '../assets/portfolio/portfolio-1.jpg';
-import portfolioTwo from '../assets/portfolio/portfolio-2.jpg';
 
 const filters = [
     {
