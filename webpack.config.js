@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: "./src/index.js",
@@ -37,7 +38,8 @@ module.exports = {
         {
           from: path.join(__dirname, "public", "robots.txt"),
           to: path.join(__dirname, "build", "robots.txt")
-        }
+        },
+        {from:'src/assets/portfolio',to:'portfolio'}
       ]
     }),
   ],
@@ -49,6 +51,17 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
@@ -66,6 +79,6 @@ module.exports = {
   },
   // pass all js files through Babel
   resolve: {
-    extensions: ["*", ".js", ".jsx"],
+    extensions: ["*", ".js", ".jsx", ".scss"],
   },
 };

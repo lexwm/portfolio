@@ -3,6 +3,7 @@ import FactsPage from "./pages/FactsPage";
 import SkillsPage from "./pages/SkillsPage";
 import ResumePage from "./pages/ResumePage";
 import PortfolioPage from "./pages/PortfolioPage";
+import ServicesPage from "./pages/ServicesPage";
 
 function ScrollContent() {
   return (
@@ -12,6 +13,7 @@ function ScrollContent() {
         <SkillsPage/>
         <ResumePage/>
         <PortfolioPage/>
+        <ServicesPage/>
       </main>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './css/style.css';
 import 'boxicons/css/boxicons.min.css';

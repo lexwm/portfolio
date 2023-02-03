@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import Isotope from 'isotope-layout';
 import AOS from 'aos';
+import PortfolioWrap from "./PortfolioWrap";
 import portfolioOne from '../assets/portfolio/portfolio-1.jpg';
 import portfolioTwo from '../assets/portfolio/portfolio-2.jpg';
 
@@ -23,6 +24,54 @@ const filters = [
     }
 ];
 
+const portfolio = [
+    {
+        image: "/portfolio/portfolio-1.jpg",
+        title: "App 1",
+        filter: "filter-app"
+    },
+    {
+        image: "/portfolio/portfolio-2.jpg",
+        title: "Web 1",
+        filter: "filter-web"
+    },
+    {
+        image: "/portfolio/portfolio-3.jpg",
+        title: "App 2",
+        filter: "filter-app"
+    },
+    {
+        image: "/portfolio/portfolio-4.jpg",
+        title: "Card 1",
+        filter: "filter-card"
+    },
+    {
+        image: "/portfolio/portfolio-5.jpg",
+        title: "Web 2",
+        filter: "filter-web"
+    },
+    {
+        image: "/portfolio/portfolio-6.jpg",
+        title: "App 3",
+        filter: "filter-app"
+    },
+    {
+        image: "/portfolio/portfolio-7.jpg",
+        title: "Card 2",
+        filter: "filter-card"
+    },
+    {
+        image: "/portfolio/portfolio-8.jpg",
+        title: "Card 3",
+        filter: "filter-card"
+    },
+    {
+        image: "/portfolio/portfolio-9.jpg",
+        title: "Web 3",
+        filter: "filter-web"
+    }
+];
+
 class PortfolioPage extends React.Component {
     constructor(props) {
         super(props);
@@ -33,15 +82,10 @@ class PortfolioPage extends React.Component {
     }
 
     handleClick(e) {
-        e.preventDefault();
         this.setActive(e);
 
         this.portfolioIsotope.arrange({
             filter: e.target.dataset.filter
-        });
-
-        this.portfolioIsotope.on('arrangeComplete', function() {
-            AOS.refresh()
         });
     }
 
@@ -49,7 +93,7 @@ class PortfolioPage extends React.Component {
         this.portfolioFilters.forEach(function(el) {
             el.classList.remove('filter-active');
         });
-        e.currentTarget.classList.toggle('filter-active');
+        e.currentTarget.classList.add('filter-active');
     }
 
     componentDidMount() {
@@ -58,6 +102,15 @@ class PortfolioPage extends React.Component {
         this.portfolioIsotope = new Isotope(this.portfolioContainer, {
             itemSelector: '.portfolio-item'
         });
+        this.portfolioIsotope.on('arrangeComplete', function() {
+            AOS.refresh()
+        });
+    }
+
+    componentWillUnmount() {
+        setTimeout(() => {
+            this.portfolioFilters[0].click();
+        }, 100);
     }
 
     select(el, all = false) {
@@ -94,113 +147,11 @@ class PortfolioPage extends React.Component {
                     </div>
 
                     <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-                        <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                            <div className="portfolio-wrap">
-                                <img src={portfolioOne} className="img-fluid" alt="" />
-                                <div className="portfolio-links">
-                                    <a href={portfolioOne} data-gallery="portfolioGallery"
-                                       className="portfolio-lightbox" title="App 1"><i className="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <div className="portfolio-wrap">
-                                <img src={portfolioTwo} className="img-fluid" alt="" />
-                                <div className="portfolio-links">
-                                    <a href={portfolioTwo} data-gallery="portfolioGallery"
-                                       className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/*<div className="col-lg-4 col-md-6 portfolio-item filter-app"*/}
-                        {/*     style="position: absolute; left: 380px; top: 0px; display: none;">*/}
-                        {/*    <div className="portfolio-wrap">*/}
-                        {/*        <img src="assets/img/portfolio/portfolio-3.jpg" className="img-fluid" alt="" />*/}
-                        {/*            <div className="portfolio-links">*/}
-                        {/*                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"*/}
-                        {/*                   className="portfolio-lightbox" title="App 2"><i className="bx bx-plus"></i></a>*/}
-                        {/*                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>*/}
-                        {/*            </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
-                        {/*<div className="col-lg-4 col-md-6 portfolio-item filter-card"*/}
-                        {/*     style="position: absolute; left: 0px; top: 0px; display: none;">*/}
-                        {/*    <div className="portfolio-wrap">*/}
-                        {/*        <img src="assets/img/portfolio/portfolio-4.jpg" className="img-fluid" alt="" />*/}
-                        {/*            <div className="portfolio-links">*/}
-                        {/*                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"*/}
-                        {/*                   className="portfolio-lightbox" title="Card 2"><i className="bx bx-plus"></i></a>*/}
-                        {/*                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>*/}
-                        {/*            </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
-                        {/*<div className="col-lg-4 col-md-6 portfolio-item filter-web"*/}
-                        {/*     style="position: absolute; left: 380px; top: 0px;">*/}
-                        {/*    <div className="portfolio-wrap">*/}
-                        {/*        <img src="assets/img/portfolio/portfolio-5.jpg" className="img-fluid" alt="" />*/}
-                        {/*            <div className="portfolio-links">*/}
-                        {/*                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"*/}
-                        {/*                   className="portfolio-lightbox" title="Web 2"><i className="bx bx-plus"></i></a>*/}
-                        {/*                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>*/}
-                        {/*            </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
-                        {/*<div className="col-lg-4 col-md-6 portfolio-item filter-app"*/}
-                        {/*     style="position: absolute; left: 760px; top: 0px; display: none;">*/}
-                        {/*    <div className="portfolio-wrap">*/}
-                        {/*        <img src="assets/img/portfolio/portfolio-6.jpg" className="img-fluid" alt="" />*/}
-                        {/*            <div className="portfolio-links">*/}
-                        {/*                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"*/}
-                        {/*                   className="portfolio-lightbox" title="App 3"><i className="bx bx-plus"></i></a>*/}
-                        {/*                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>*/}
-                        {/*            </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
-                        {/*<div className="col-lg-4 col-md-6 portfolio-item filter-card"*/}
-                        {/*     style="position: absolute; left: 380px; top: 0px; display: none;">*/}
-                        {/*    <div className="portfolio-wrap">*/}
-                        {/*        <img src="assets/img/portfolio/portfolio-7.jpg" className="img-fluid" alt="" />*/}
-                        {/*            <div className="portfolio-links">*/}
-                        {/*                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"*/}
-                        {/*                   className="portfolio-lightbox" title="Card 1"><i className="bx bx-plus"></i></a>*/}
-                        {/*                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>*/}
-                        {/*            </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
-                        {/*<div className="col-lg-4 col-md-6 portfolio-item filter-card"*/}
-                        {/*     style="position: absolute; left: 760px; top: 0px; display: none;">*/}
-                        {/*    <div className="portfolio-wrap">*/}
-                        {/*        <img src="assets/img/portfolio/portfolio-8.jpg" className="img-fluid" alt="" />*/}
-                        {/*            <div className="portfolio-links">*/}
-                        {/*                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"*/}
-                        {/*                   className="portfolio-lightbox" title="Card 3"><i className="bx bx-plus"></i></a>*/}
-                        {/*                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>*/}
-                        {/*            </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
-                        {/*<div className="col-lg-4 col-md-6 portfolio-item filter-web"*/}
-                        {/*     style="position: absolute; left: 760px; top: 0px;">*/}
-                        {/*    <div className="portfolio-wrap">*/}
-                        {/*        <img src="assets/img/portfolio/portfolio-9.jpg" className="img-fluid" alt="" />*/}
-                        {/*            <div className="portfolio-links">*/}
-                        {/*                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"*/}
-                        {/*                   className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus"></i></a>*/}
-                        {/*                <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>*/}
-                        {/*            </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
+                        {
+                            portfolio.map(item => (
+                                <PortfolioWrap key={item.image} image={item.image} title={item.title} filter={item.filter}/>
+                            ))
+                        }
                     </div>
 
                 </div>
