@@ -28,12 +28,16 @@ module.exports = {
           to: path.join(__dirname, "build", "manifest.json")
         },
         {
-          from: path.join(__dirname, "public", "logo192.png"),
-          to: path.join(__dirname, "build", "logo192.png")
+          from: path.join(__dirname, "public", "android-chrome-192x192.png"),
+          to: path.join(__dirname, "build", "android-chrome-192x192.png")
         },
         {
-          from: path.join(__dirname, "public", "logo512.png"),
-          to: path.join(__dirname, "build", "logo512.png")
+          from: path.join(__dirname, "public", "android-chrome-512x512.png"),
+          to: path.join(__dirname, "build", "android-chrome-512x512.png")
+        },
+        {
+          from: path.join(__dirname, "public", "apple-touch-icon.png"),
+          to: path.join(__dirname, "build", "apple-touch-icon.png")
         },
         {
           from: path.join(__dirname, "public", "robots.txt"),
