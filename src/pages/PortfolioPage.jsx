@@ -24,47 +24,47 @@ const filters = [
 
 const portfolio = [
     {
-        image: "/portfolio/portfolio-1.jpg",
+        image: "/img/portfolio/portfolio-1.jpg",
         title: "App 1",
         filter: "filter-app"
     },
     {
-        image: "/portfolio/portfolio-2.jpg",
+        image: "/img/portfolio/portfolio-2.jpg",
         title: "Web 1",
         filter: "filter-web"
     },
     {
-        image: "/portfolio/portfolio-3.jpg",
+        image: "/img/portfolio/portfolio-3.jpg",
         title: "App 2",
         filter: "filter-app"
     },
     {
-        image: "/portfolio/portfolio-4.jpg",
+        image: "/img/portfolio/portfolio-4.jpg",
         title: "Card 1",
         filter: "filter-card"
     },
     {
-        image: "/portfolio/portfolio-5.jpg",
+        image: "/img/portfolio/portfolio-5.jpg",
         title: "Web 2",
         filter: "filter-web"
     },
     {
-        image: "/portfolio/portfolio-6.jpg",
+        image: "/img/portfolio/portfolio-6.jpg",
         title: "App 3",
         filter: "filter-app"
     },
     {
-        image: "/portfolio/portfolio-7.jpg",
+        image: "/img/portfolio/portfolio-7.jpg",
         title: "Card 2",
         filter: "filter-card"
     },
     {
-        image: "/portfolio/portfolio-8.jpg",
+        image: "/img/portfolio/portfolio-8.jpg",
         title: "Card 3",
         filter: "filter-card"
     },
     {
-        image: "/portfolio/portfolio-9.jpg",
+        image: "/img/portfolio/portfolio-9.jpg",
         title: "Web 3",
         filter: "filter-web"
     }

@@ -60,7 +60,7 @@ class TestimonialsPage extends React.Component {
                                         risus at semper.
                                         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                                     </p>
-                                    <img src="/testimonials/testimonials-1.jpg" className="testimonial-img"
+                                    <img src="/img/testimonials/testimonials-1.jpg" className="testimonial-img"
                                          alt="" />
                                     <h3>Saul Goodman</h3>
                                     <h4>Ceo &amp; Founder</h4>
@@ -76,7 +76,7 @@ class TestimonialsPage extends React.Component {
                                         legam anim culpa.
                                         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                                     </p>
-                                    <img src="/testimonials/testimonials-2.jpg" className="testimonial-img"
+                                    <img src="/img/testimonials/testimonials-2.jpg" className="testimonial-img"
                                          alt="" />
                                     <h3>Sara Wilsson</h3>
                                     <h4>Designer</h4>
@@ -92,7 +92,7 @@ class TestimonialsPage extends React.Component {
                                         minim.
                                         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                                     </p>
-                                    <img src="/testimonials/testimonials-3.jpg" className="testimonial-img"
+                                    <img src="/img/testimonials/testimonials-3.jpg" className="testimonial-img"
                                          alt="" />
                                     <h3>Jena Karlis</h3>
                                     <h4>Store Owner</h4>
@@ -108,7 +108,7 @@ class TestimonialsPage extends React.Component {
                                         dolore labore illum veniam.
                                         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                                     </p>
-                                    <img src="/testimonials/testimonials-4.jpg" className="testimonial-img"
+                                    <img src="/img/testimonials/testimonials-4.jpg" className="testimonial-img"
                                          alt="" />
                                     <h3>Matt Brandon</h3>
                                     <h4>Freelancer</h4>
@@ -124,7 +124,7 @@ class TestimonialsPage extends React.Component {
                                         culpa fore nisi cillum quid.
                                         <i className="bx bxs-quote-alt-right quote-icon-right"></i>
                                     </p>
-                                    <img src="/testimonials/testimonials-5.jpg" className="testimonial-img"
+                                    <img src="/img/testimonials/testimonials-5.jpg" className="testimonial-img"
                                          alt="" />
                                     <h3>John Larson</h3>
                                     <h4>Entrepreneur</h4>
