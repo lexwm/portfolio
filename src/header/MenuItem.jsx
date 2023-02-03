@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 function MenuItem(props) {
     return (
         <Nav.Item as="li">
-            <Nav.Link href={props.href}>
+            <Nav.Link href={props.href} className="scrollto">
                 <i className={props.class}></i>
                 {props.name}
             </Nav.Link>
