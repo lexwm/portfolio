@@ -1,5 +1,6 @@
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
+import Bio from "../helpers/Bio";
 
 function HeroSection() {
 
@@ -25,7 +26,7 @@ function HeroSection() {
     return (
         <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
             <div className="hero-container" data-aos="fade-in">
-                <h1>Oleksiy Ranuk</h1>
+                <h1>{Bio.name}</h1>
                 <p>
                     I'm <span ref={el}></span>
                 </p>
