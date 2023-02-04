@@ -53,7 +53,7 @@ class AboutPage extends React.Component {
                                 <div className="col-lg-6">
                                     <ul>
                                         <AboutChevron name="Birthday" value={this.birthdayFormat()}/>
-                                        <AboutChevron name="Website" value="www.example.com"/>
+                                        <AboutChevron name="Website" value={Bio.website}/>
                                         <AboutChevron name="Phone" value="+123 456 7890"/>
                                         <AboutChevron name="City" value="Kyiv, Ukraine"/>
                                     </ul>

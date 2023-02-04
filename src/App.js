@@ -1,6 +1,7 @@
 import Header from "./header/Header";
 import HeroSection from "./hero/HeroSection";
 import ScrollContent from "./ScrollContent";
+import Footer from "./pages/Footer";
 import MobileToggle from "./MobileToggle";
 import AOS from 'aos';
 import React from 'react';
@@ -53,6 +54,7 @@ class App extends React.Component{
                 <Header/>
                 <HeroSection/>
                 <ScrollContent/>
+                <Footer/>
                 <a href="#" className="back-to-top d-flex align-items-center justify-content-center">
                     <i className="bi bi-arrow-up-short"></i>
                 </a>
