@@ -6,7 +6,7 @@ function Footer () {
                 {/*    &copy; Copyright <strong><span>iPortfolio</span></strong>*/}
                 {/*</div>*/}
                 <div className="credits">
-                    Website powered by <a href="https://reactjs.org/"><i className="bx bxl-react bx-flip-vertical"></i> React</a>
+                    Website powered by <a href="https://reactjs.org/" target="_blank"><i className="bx bxl-react bx-flip-vertical"></i> React</a>
                 </div>
             </div>
         </footer>

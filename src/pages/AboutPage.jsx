@@ -33,9 +33,9 @@ class AboutPage extends React.Component {
 
                     <div className="section-title">
                         <h2>About</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                            sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                            ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>My whole life is programming. I started at university and to present day I have always been a programmer.
+
+                        </p>
                     </div>
 
                     <div className="row">
@@ -43,19 +43,17 @@ class AboutPage extends React.Component {
                             <img src={profile} className="img-fluid" alt="" />
                         </div>
                         <div className="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
-                            <h3>UI/UX Designer &amp; Web Developer.</h3>
+                            <h3>Team Lead &amp; PHP Web Developer.</h3>
                             <p className="fst-italic">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore
-                                magna aliqua.
+                                I have 15+ years of experience designing and developing web solutions user-centered from initial concept to final, polished deliverable.
                             </p>
                             <div className="row">
                                 <div className="col-lg-6">
                                     <ul>
                                         <AboutChevron name="Birthday" value={this.birthdayFormat()}/>
                                         <AboutChevron name="Website" value={Bio.website}/>
-                                        <AboutChevron name="Phone" value="+123 456 7890"/>
-                                        <AboutChevron name="City" value="Kyiv, Ukraine"/>
+                                        <AboutChevron name="Phone" value={Bio.phone}/>
+                                        <AboutChevron name="City" value={Bio.location}/>
                                     </ul>
                                 </div>
                                 <div className="col-lg-6">
