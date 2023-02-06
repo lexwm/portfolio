@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import 'bootstrap/scss/bootstrap.scss';
 import 'bootstrap-icons/font/bootstrap-icons.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'boxicons/css/boxicons.min.css';
