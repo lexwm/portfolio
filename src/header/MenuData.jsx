@@ -10,6 +10,11 @@ const MenuData = [
         iconClass: "bx bx-user"
     },
     {
+        name: "Skills",
+        href: "#skills",
+        iconClass: "bx bxs-book-open"
+    },
+    {
         name: "Resume",
         href: "#resume",
         iconClass: "bx bx-file-blank"
