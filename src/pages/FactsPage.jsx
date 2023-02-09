@@ -1,64 +1,68 @@
+import React from 'react';
+import PureCounter from "@srexi/purecounterjs";
+import FactsBox from "./FactsBox";
 
+const FactsData = [
+    {
+        delay: 0,
+        icon: "bi bi-emoji-smile",
+        count: 232,
+        title: "Happy Clients",
+        text: "consequuntur quae"
+    },
+    {
+        delay: 100,
+        icon: "bi bi-journal-richtext",
+        count: 521,
+        title: "Projects",
+        text: "adipisci atque cum quia aut"
+    },
+    {
+        delay: 200,
+        icon: "bi bi-headset",
+        count: 1453,
+        title: "Hours Of Support",
+        text: "aut commodi quaerat"
+    },
+    {
+        delay: 300,
+        icon: "bi bi-people",
+        count: 32,
+        title: "Hard Workers",
+        text: "rerum asperiores dolor"
+    }
+];
 
-function FactsPage() {
-    return (
-        <section id="facts" className="facts">
-            <div className="container">
+class FactsPage extends React.Component {
 
-                <div className="section-title">
-                    <h2>Facts</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    componentDidMount() {
+        new PureCounter({
+            once: false
+        });
+    }
+
+    render() {
+        return (
+            <section id="facts" className="facts">
+                <div className="container">
+
+                    <div className="section-title">
+                        <h2>Facts</h2>
+                        <p>Some useful figures and facts from my practice</p>
+                    </div>
+
+                    <div className="row no-gutters">
+                        {
+                            FactsData.map(item => (
+                                <FactsBox item={item} />
+                            ))
+                        }
+                    </div>
+
                 </div>
-
-                <div className="row no-gutters">
-
-                    <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch aos-init aos-animate"
-                         data-aos="fade-up">
-                        <div className="count-box">
-                            <i className="bi bi-emoji-smile"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0"
-                                  className="purecounter">232</span>
-                            <p><strong>Happy Clients</strong> consequuntur quae</p>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch aos-init aos-animate"
-                         data-aos="fade-up" data-aos-delay="100">
-                        <div className="count-box">
-                            <i className="bi bi-journal-richtext"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0"
-                                  className="purecounter">521</span>
-                            <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch aos-init aos-animate"
-                         data-aos="fade-up" data-aos-delay="200">
-                        <div className="count-box">
-                            <i className="bi bi-headset"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0"
-                                  className="purecounter">1&nbsp;453</span>
-                            <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-3 col-md-6 d-md-flex align-items-md-stretch aos-init aos-animate"
-                         data-aos="fade-up" data-aos-delay="300">
-                        <div className="count-box">
-                            <i className="bi bi-people"></i>
-                            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0"
-                                  className="purecounter">32</span>
-                            <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-    );
+            </section>
+        );
+    }
 }
 
 export default FactsPage;

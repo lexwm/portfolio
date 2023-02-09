@@ -33,7 +33,10 @@ class AboutPage extends React.Component {
 
                     <div className="section-title">
                         <h2>About</h2>
-                        <p>My whole life is programming. I started at university and to present day I have always been a programmer.
+                        <p>I started programming at the university and to this day I have remain a programmer.
+                            Constantly developing. I try different technologies and programming languages.
+                            I like working with people. You can always learn something new.
+                            Responsible. I always work for results.
 
                         </p>
                     </div>
@@ -66,11 +69,9 @@ class AboutPage extends React.Component {
                                 </div>
                             </div>
                             <p>
-                                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt
-                                adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus
-                                itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis
-                                culpa magni laudantium dolores.
+                                Friendly as a colleague but strict as a boss.
+                                I'm not averse to spending some time with the team over a glass of beer at the end of the working week.
+                                My main working tools: jira, phpstorm, mail, calendar and of course the command line.
                             </p>
                         </div>
                     </div>
