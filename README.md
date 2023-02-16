@@ -1,2 +1,3 @@
-# react-webpack-setup
-Simple step by step walkthrough of setting up a React app with Webpack
+# Setup
+* run command `make install` for *nix system
+* url by default http://localhost:3000/
