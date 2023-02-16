@@ -52,11 +52,7 @@ class FactsPage extends React.Component {
                     </div>
 
                     <div className="row no-gutters">
-                        {
-                            FactsData.map(item => (
-                                <FactsBox item={item} />
-                            ))
-                        }
+                        {FactsData.map(item => (<FactsBox item={item}/>))}
                     </div>
 
                 </div>
