@@ -8,15 +8,15 @@ function SkillsPage() {
 
                 <div className="section-title">
                     <h2>Skills and Knowledge</h2>
-                    <p>The percentage of time spent with technology in relation to the total work experience</p>
+                    <p>The percentage of time spent with technology in relation to the total work experience (more than 15 years in IT industry)</p>
                 </div>
 
                 <div className="row skills-content">
                     <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <ProgressItem name="HTML" percent="40"/>
+                        <ProgressItem name="Team Lead" percent="50"/>
+                        <ProgressItem name="Rabbit MQ" percent="75"/>
                         <ProgressItem name="CSS / LESS / SASS" percent="40"/>
                         <ProgressItem name="JavaScript / jQuery" percent="50"/>
-                        <ProgressItem name="NGINX" percent="40"/>
                         <ProgressItem name="Redis" percent="70"/>
                     </div>
 

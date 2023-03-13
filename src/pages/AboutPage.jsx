@@ -1,7 +1,7 @@
 import React from "react";
 import AboutChevron from "./AboutChevron";
 import Bio from "../helpers/Bio";
-import profile from '../assets/profile-img.jpg';
+import profile from '../assets/600x600.jpg';
 
 class AboutPage extends React.Component {
 

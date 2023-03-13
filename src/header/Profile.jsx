@@ -1,4 +1,4 @@
-import profile from '../assets/IMG_4110.jpeg';
+import profile from '../assets/600x600.jpg';
 import Links from "./Links";
 import Bio from "../helpers/Bio";
 
