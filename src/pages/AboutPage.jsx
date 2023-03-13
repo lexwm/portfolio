@@ -71,7 +71,7 @@ class AboutPage extends React.Component {
                             <p>
                                 Friendly as a colleague but strict as a boss.
                                 I'm not averse to spending some time with the team over a glass of beer at the end of the working week.
-                                My main working tools: jira, phpstorm, mail, calendar and of course the command line.
+                                My main working tools: telegram, jira, phpstorm, mail, calendar and of course the command line.
                             </p>
                         </div>
                     </div>

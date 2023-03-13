@@ -6,30 +6,34 @@ const FactsData = [
     {
         delay: 0,
         icon: "bi bi-emoji-smile",
-        count: 232,
+        count: 10000,
         title: "Happy Clients",
-        text: "consequuntur quae"
+        text: "per one project",
+        plus: true
     },
     {
         delay: 100,
-        icon: "bi bi-journal-richtext",
-        count: 521,
-        title: "Projects",
-        text: "adipisci atque cum quia aut"
+        icon: "bi bi-headset",
+        count: 6000,
+        title: "Hours Of Communication",
+        text: "with customers and business",
+        plus: true
     },
     {
         delay: 200,
-        icon: "bi bi-headset",
-        count: 1453,
-        title: "Hours Of Support",
-        text: "aut commodi quaerat"
+        icon: "bi bi-people",
+        count: 15,
+        title: "people in team",
+        text: "per one project",
+        plus: true
     },
     {
         delay: 300,
-        icon: "bi bi-people",
-        count: 32,
-        title: "Hard Workers",
-        text: "rerum asperiores dolor"
+        icon: "bi bi-journal-richtext",
+        count: 5,
+        title: "Completed Projects",
+        text: "from idea to full self-sufficiency",
+        plus: false
     }
 ];
 
