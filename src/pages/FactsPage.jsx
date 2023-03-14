@@ -25,7 +25,7 @@ const FactsData = [
         count: 15,
         title: "people in team",
         text: "per one project",
-        plus: true
+        plus: false
     },
     {
         delay: 300,
