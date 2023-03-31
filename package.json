@@ -1,23 +1,25 @@
 {
-  "name": "react-webpack-setup",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Simple step by step walkthrough of setting up a React app with Webpack",
+  "description": "Oleksiy Ranuk portfolio site on React.JS with Webpack",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --mode production",
     "start": "webpack serve --mode development"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jsramblings/react-webpack-setup.git"
+    "url": "git+https://github.com/lexwm/oprtfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Oleksiy Ranuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jsramblings/react-webpack-setup/issues"
+    "url": "https://github.com/lexwm/oprtfolio/issues"
   },
-  "homepage": "http://localhost:3000",
+  "homepage": "https://lexwm.github.io/oprtfolio",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
@@ -45,6 +47,7 @@
     "bootstrap-icons": "^1.10.3",
     "boxicons": "^2.1.4",
     "dotenv": "^16.0.3",
+    "gh-pages": "^5.0.0",
     "isotope-layout": "^3.0.6",
     "photoswipe": "^5.3.7",
     "react": "^18.1.0",
