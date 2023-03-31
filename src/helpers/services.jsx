@@ -4,44 +4,41 @@ const services = [
     {
         delay: 0,
         icon: "bi bi-briefcase",
-        title: "Lorem Ipsum",
-        description: "Voluptatum deleniti atque corrupti quos dolores et quas molestias\n" +
-            "                            excepturi sint occaecati cupiditate non provident"
+        title: "Development of Internet solutions",
+        description: "Turnkey solution development from scratch or assistance with existing solutions"
     },
     {
         delay: 100,
         icon: "bi bi-card-checklist",
-        title: "Dolor Sitema",
-        description: "Minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n" +
-            "                            aliquip ex ea commodo consequat tarad limino ata"
+        title: "Workflow optimization",
+        description: "Analysis of current processes. Selection of optimization and automation options"
     },
     {
         delay: 200,
         icon: "bi bi-bar-chart",
-        title: "Sed ut perspiciatis",
-        description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum\n" +
-            "                            dolore eu fugiat nulla pariatur"
+        title: "Analysis and optimization of financial costs",
+        description: "Analysis of current financial costs for the maintenance of the project. " +
+            "Selection of possible options for reducing costs."
     },
     {
         delay: 300,
         icon: "bi bi-binoculars",
-        title: "Magni Dolores",
-        description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui\n" +
-            "                            officia deserunt mollit anim id est laborum"
+        title: "Analysis of possible vulnerabilities",
+        description: "Search for possible site vulnerabilities. Code analysis for weaknesses. " +
+            "Help in solving problems found."
     },
     {
         delay: 400,
         icon: "bi bi-brightness-high",
-        title: "Nemo Enim",
-        description: "At vero eos et accusamus et iusto odio dignissimos ducimus qui\n" +
-            "                            blanditiis praesentium voluptatum deleniti atque"
+        title: "Introduction of modern technologies",
+        description: "Is your project out of date? We will help to update it and apply the best modern practices."
     },
     {
         delay: 500,
-        icon: "bi bi-calendar4-week",
-        title: "Eiusmod Tempor",
-        description: "Et harum quidem rerum facilis est et expedita distinctio. Nam libero\n" +
-            "                            tempore, cum soluta nobis est eligendi"
+        icon: "bi bi-people-fill",
+        title: "Team selection",
+        description: "Are you experiencing staffing difficulties? Let us help you put together " +
+            "the right team for your needs."
     }
 ];
 

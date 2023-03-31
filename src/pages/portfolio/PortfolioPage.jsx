@@ -2,7 +2,9 @@ import React from 'react';
 import Isotope from 'isotope-layout';
 import AOS from 'aos';
 import PortfolioWrap from "./PortfolioWrap";
-import Helper from "../helpers/Helper";
+import Helper from "../../helpers/Helper";
+import 'photoswipe/dist/photoswipe.css'
+import { Gallery } from 'react-photoswipe-gallery'
 
 const filters = [
     {
@@ -138,13 +140,14 @@ class PortfolioPage extends React.Component {
                     </div>
 
                     <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-                        {
-                            portfolio.map(item => (
-                                <PortfolioWrap key={item.image} image={item.image} title={item.title} filter={item.filter}/>
-                            ))
-                        }
+                        <Gallery withCaption>
+                            {
+                                portfolio.map(item => (
+                                    <PortfolioWrap key={item.image} image={item.image} title={item.title} filter={item.filter}/>
+                                ))
+                            }
+                        </Gallery>
                     </div>
-
                 </div>
             </section>
         );

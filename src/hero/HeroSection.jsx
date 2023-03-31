@@ -9,7 +9,7 @@ function HeroSection() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["IT Engineer", "Team Lead", "PHP Developer", "a little of DevOps"], // Strings to display
+            strings: ["IT Engineer", "Team Lead", "Database architect", "PHP Developer"], // Strings to display
             loop: true,
             startDelay: 300,
             typeSpeed: 100,
