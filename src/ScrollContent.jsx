@@ -13,7 +13,7 @@ function ScrollContent() {
         <FactsPage/>
         <SkillsPage/>
         <ResumePage/>
-        <PortfolioPage/>
+        {/*<PortfolioPage/>*/}
         <ServicesPage/>
         <TestimonialsPage/>
       </main>

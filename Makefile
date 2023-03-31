@@ -23,3 +23,6 @@ restart: down up
 
 logs:
 	@docker-compose logs -f api
+
+prod:
+	npm run deploy
