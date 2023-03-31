@@ -3,7 +3,7 @@ const Bio = {
     email: "belay-sawmill-07@icloud.com",
     telegram: "https://t.me/alekseyranuk",
     linkedin: "https://www.linkedin.com/in/aleksey-ranuk/",
-    website: "https://lexwm.github.io/oprtfolio",
+    website: "https://lexwm.github.io/portfolio/",
     location: "Kyiv 04205, Ukraine",
     phone: "(123) 456-7891"
 }
