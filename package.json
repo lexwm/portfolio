@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lexwm/oprtfolio.git"
+    "url": "git+https://github.com/lexwm/portfolio.git"
   },
   "keywords": [],
   "author": "Oleksiy Ranuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lexwm/oprtfolio/issues"
+    "url": "https://github.com/lexwm/portfolio/issues"
   },
-  "homepage": "https://lexwm.github.io/oprtfolio",
+  "homepage": "https://lexwm.github.io/portfolio",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
