@@ -122,9 +122,10 @@ class PortfolioPage extends React.Component {
 
                     <div className="section-title">
                         <h2>Portfolio</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                            sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                            ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>This portfolio showcases some of my best work and highlights my skills and accomplishments.
+                            Whether you are a potential employer, client, or simply interested in my work,
+                            I invite you to explore my portfolio and learn more about my capabilities.
+                            Thank you for taking the time to visit!</p>
                     </div>
 
                     <div className="row" data-aos="fade-up">

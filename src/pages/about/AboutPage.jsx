@@ -33,10 +33,12 @@ class AboutPage extends React.Component {
 
                     <div className="section-title">
                         <h2>About</h2>
-                        <p>I started programming at the university and to this day I have remain a programmer.
-                            Constantly developing. I try different technologies and programming languages.
-                            I like working with people. You can always learn something new.
-                            Responsible. I always work for results.
+                        <p>I began my programming journey during my university years and have remained a dedicated
+                            programmer ever since. Over the years, I have constantly evolved and honed my skills by
+                            exploring diverse technologies and programming languages. Collaborating with others brings
+                            me great joy as I believe that one can always gain knowledge from different perspectives.
+                            I am a responsible and goal-oriented individual who prioritizes delivering results in
+                            every project I undertake.
 
                         </p>
                     </div>
@@ -69,9 +71,12 @@ class AboutPage extends React.Component {
                                 </div>
                             </div>
                             <p>
-                                Friendly as a colleague but strict as a boss.
-                                I'm not averse to spending some time with the team over a glass of beer at the end of the working week.
-                                My main working tools: telegram, jira, phpstorm, mail, calendar and of course the command line.
+                                As a colleague, I am friendly and approachable, but when it comes to managing a team,
+                                I am firm and focused on achieving our goals. After a long week of work, I enjoy
+                                spending time with my team and socializing over a glass of beer. My primary tools for
+                                work include Telegram, Jira, PHPStorm, Mail, Calendar, and the command line.
+                                These tools are essential to my productivity and help me stay organized and efficient
+                                in managing tasks and projects.
                             </p>
                         </div>
                     </div>

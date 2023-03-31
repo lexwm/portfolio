@@ -27,10 +27,10 @@ class PortfolioWrap extends React.Component {
                         <div className="portfolio-wrap">
                             <img ref={ref} onClick={open} src={this.state.image} className="img-fluid"/>
                             <div className="portfolio-links">
-                                <a href="#" onClick={open} data-gallery="portfolioGallery"
+                                <a onClick={open} data-gallery="portfolioGallery"
                                    className="portfolio-lightbox" title={this.state.title}><i
                                     className="bx bx-plus"></i></a>
-                                <a href="#" title="More Details"><i className="bx bx-link"></i></a>
+                                <a href="#portfolio" title="More Details"><i className="bx bx-link"></i></a>
                             </div>
                         </div>
                     )}

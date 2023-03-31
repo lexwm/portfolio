@@ -4,7 +4,7 @@ import SkillsPage from "./pages/SkillsPage";
 import ResumePage from "./pages/ResumePage";
 import PortfolioPage from "./pages/portfolio/PortfolioPage";
 import ServicesPage from "./pages/services/ServicesPage";
-import TestimonialsPage from "./pages/TestimonialsPage";
+import TestimonialsPage from "./pages/testimonials/TestimonialsPage";
 
 function ScrollContent() {
   return (
