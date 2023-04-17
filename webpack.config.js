@@ -55,7 +55,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.s[ac]ss$/i,
+        test: /.s?css$/,
         use: [
           // Creates `style` nodes from JS strings
           "style-loader",
@@ -64,10 +64,6 @@ module.exports = {
           // Compiles Sass to CSS
           "sass-loader",
         ],
-      },
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jp(e*)g|svg|gif)$/,
@@ -83,5 +79,8 @@ module.exports = {
   // pass all js files through Babel
   resolve: {
     extensions: ["*", ".js", ".jsx", ".scss"],
+  },
+  optimization: {
+    minimize: true,
   },
 };
