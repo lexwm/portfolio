@@ -10,6 +10,8 @@ import Helper from "./helpers/Helper";
 import ReactGA from "react-ga4";
 ReactGA.initialize("G-SHL6EZEB39");
 
+import Helmet from "react-helmet";
+
 class App extends React.Component{
 
     constructor(props) {
@@ -53,6 +55,9 @@ class App extends React.Component{
     render() {
         return (
             <div>
+                <Helmet>
+                    <meta name="google-site-verification" content="9oIkg1qgzK43cdGOnq3mBc4-1MS0lPCnG7BCs-aDOVk" />
+                </Helmet>
                 <MobileToggle/>
                 <Header/>
                 <HeroSection/>
