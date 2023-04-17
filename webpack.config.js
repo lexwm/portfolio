@@ -19,9 +19,8 @@ module.exports = {
       },
       favicon: path.join(__dirname, "public", "favicon.ico"),
       template: path.join(__dirname, "public", "index.html"),
-      inject: 'head',
+      // inject: 'head',
     }),
-
     new CopyPlugin({
       patterns: [
         {
@@ -59,8 +58,7 @@ module.exports = {
       {
         test: /.s?css$/,
         use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS
